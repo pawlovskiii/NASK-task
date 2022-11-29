@@ -1,14 +1,15 @@
 from src.data import listOfKeysOfDict, stringCPE
 from src.mergeArrays import mergeArraysToDict
 from src.extractValuesOfDict import extractDictValues
+from src.writingJsonFile import writingJson
 
 
 def main():
 
-    return mergeArraysToDict(listOfKeysOfDict, extractDictValues(stringCPE))
+    dictCPE = mergeArraysToDict(listOfKeysOfDict, extractDictValues(stringCPE))
+    writingJson(dictCPE)
 
-
-print(main())
+    return dictCPE
 
 
 if __name__ == "__main__":
