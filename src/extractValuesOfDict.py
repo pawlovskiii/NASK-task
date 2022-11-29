@@ -1,4 +1,4 @@
-from src.extractString import stripString
+from src.extractStringCPE import stripString
 
 
 def extractDictValues(stringCPE):
