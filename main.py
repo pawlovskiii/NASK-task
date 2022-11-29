@@ -1,8 +1,5 @@
 from src.data import listOfKeysOfDict, stringCPE
-
-
-def stripString(stringCPE):
-    return stringCPE.strip("cpe:2.3")
+from src.extractString import stripString
 
 
 def extractDictValues(stringCPE):
@@ -21,8 +18,4 @@ def mergeArraysToDict(keys, values):
     return dict(zip(keys, values))
 
 
-print(
-    mergeArraysToDict(
-        listOfKeysOfDict, extractDictValues(stringCPE)
-    )
-)
+print(mergeArraysToDict(listOfKeysOfDict, extractDictValues(stringCPE)))
