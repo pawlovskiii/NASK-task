@@ -15,4 +15,8 @@ def extractDictValues(stringCPE):
     return arrayForValuesToDict
 
 
-print(mergeArraysToDict(listOfKeysOfDict, extractDictValues(stringCPE)))
+def main():
+
+    return mergeArraysToDict(listOfKeysOfDict, extractDictValues(stringCPE))
+
+print(main())
