@@ -1,5 +1,6 @@
 from src.data import listOfKeysOfDict, stringCPE
 from src.extractString import stripString
+from src.mergeArrays import mergeArraysToDict
 
 
 def extractDictValues(stringCPE):
@@ -12,10 +13,6 @@ def extractDictValues(stringCPE):
             continue
         arrayForValuesToDict.append(i)
     return arrayForValuesToDict
-
-
-def mergeArraysToDict(keys, values):
-    return dict(zip(keys, values))
 
 
 print(mergeArraysToDict(listOfKeysOfDict, extractDictValues(stringCPE)))
