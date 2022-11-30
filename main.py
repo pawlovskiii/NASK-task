@@ -4,7 +4,7 @@ from src.extractValuesOfDict import extractDictValues
 from src.writingJsonFile import writingJson
 
 
-def main() -> None:
+def main() -> dict:
 
     dictCPE = mergeArraysToDict(listOfKeysOfDict, extractDictValues(stringCPE))
     writingJson(dictCPE)
