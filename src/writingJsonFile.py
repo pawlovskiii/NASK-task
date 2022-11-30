@@ -1,7 +1,7 @@
 import json
 
 
-def writingJson(dictCPE):
+def writingJson(dictCPE: dict) -> None:
     json_object = json.dumps(dictCPE, indent=11)
 
     with open("DictCPE.json", "w") as outfile:
