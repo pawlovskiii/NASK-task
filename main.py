@@ -4,12 +4,15 @@ from src.extractValuesOfDict import extractDictValues
 from src.writingJsonFile import writingJson
 
 
-def main() -> dict:
+def main() -> None:
 
     dictCPE = mergeArraysToDict(listOfKeysOfDict, extractDictValues(stringCPE))
     writingJson(dictCPE)
 
-    return dictCPE
+    print(dictCPE)
+
+
+main()
 
 
 if __name__ == "__main__":
