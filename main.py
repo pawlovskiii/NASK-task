@@ -9,10 +9,10 @@ def main() -> None:
     dictCPE = mergeArraysToDict(listOfKeysOfDict, extractDictValues(stringCPE))
     writingJson(dictCPE)
 
-    print(dictCPE)
+    return dictCPE
 
 
-main()
+print(main())
 
 
 if __name__ == "__main__":
