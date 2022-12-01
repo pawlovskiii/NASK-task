@@ -1,13 +1,13 @@
-from src.data import listOfKeysOfDict, stringCPE
+from src.data import listOfKeysToOutputDictCPE, stringCPE
 from src.mergeArrays import mergeArraysToDict
-from src.extractValuesOfDict import extractDictValues
-from src.writingJsonFile import writingJson
+from src.extractValuesOfDict import extractDictValuesToList
+from src.writingJsonFile import writingJsonFile
 
 
 def main() -> dict:
 
-    dictCPE = mergeArraysToDict(listOfKeysOfDict, extractDictValues(stringCPE))
-    writingJson(dictCPE)
+    dictCPE = mergeArraysToDict(listOfKeysToOutputDictCPE, extractDictValuesToList(stringCPE))
+    writingJsonFile(dictCPE)
 
     return dictCPE
 

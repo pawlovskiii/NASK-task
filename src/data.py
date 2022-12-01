@@ -1,4 +1,4 @@
-listOfKeysOfDict = [
+listOfKeysToOutputDictCPE = [
     "part",
     "vendor",
     "product",
