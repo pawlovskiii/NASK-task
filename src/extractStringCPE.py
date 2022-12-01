@@ -1,2 +1,6 @@
+from initialValidationOfStringCPE import validationOfStringCPE
+
+
 def stripString(stringCPE: str) -> str:
-    return stringCPE.strip("cpe:2.3")
+    validatedStringCPE = validationOfStringCPE(stringCPE)
+    return validatedStringCPE.strip("cpe:2.3")
