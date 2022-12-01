@@ -1,6 +1,9 @@
-from src.initialValidationOfStringCPE import validationOfStringCPE
+from src.initialValidationOfStringCPE import validationOfStringCPE, regExValidationOfStringCPE
 
 
 def stripString(stringCPE: str) -> str:
     validatedStringCPE = validationOfStringCPE(stringCPE)
-    return validatedStringCPE.strip("cpe:2.3")
+    strippedStringCPE = validatedStringCPE.strip("cpe:2.3")
+    regExValidation = regExValidationOfStringCPE(strippedStringCPE)
+
+    return regExValidation
