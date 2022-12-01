@@ -1,4 +1,4 @@
-from initialValidationOfStringCPE import validationOfStringCPE
+from src.initialValidationOfStringCPE import validationOfStringCPE
 
 
 def stripString(stringCPE: str) -> str:
