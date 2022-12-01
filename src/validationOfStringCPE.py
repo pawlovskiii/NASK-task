@@ -1,7 +1,7 @@
 import re
 
 
-def validationOfStringCPE(stringCPE: str) -> str:
+def initialValidationOfStringCPE(stringCPE: str) -> str:
     if not isinstance(stringCPE, str):
         raise TypeError("Wrong type! Input must be a string.")
     if not stringCPE.startswith("cpe:2.3"):
