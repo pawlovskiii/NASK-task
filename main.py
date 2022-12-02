@@ -1,5 +1,9 @@
 from src.data import listOfKeysToOutputDictCPE, stringCPE
-from src.validationOfStringCPE import initialValidationOfStringCPE, regExValidationOfStringCPE
+from src.validationOfStringCPE import (
+    validationOfInputType,
+    validationOfTheBeginningOfTheString,
+    regExValidationOfStringCPE,
+)
 from src.extractStringCPE import stripString
 from src.mergeArrays import mergeArraysToDict
 from src.extractValuesOfDict import extractDictValuesToList
@@ -8,8 +12,10 @@ from src.writingJsonFile import writingJsonFile
 
 def main() -> dict:
 
-    validatedStringCPE = initialValidationOfStringCPE(stringCPE)
-    strippedStringCPE = stripString(validatedStringCPE)
+    validatedInputType = validationOfInputType(stringCPE)
+    validatedTheBeginningOfTheString = validationOfTheBeginningOfTheString(validatedInputType)
+
+    strippedStringCPE = stripString(validatedTheBeginningOfTheString)
     regExValidation = regExValidationOfStringCPE(strippedStringCPE)
 
     dictCPE = mergeArraysToDict(listOfKeysToOutputDictCPE, extractDictValuesToList(regExValidation))

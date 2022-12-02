@@ -1,9 +1,13 @@
 import re
 
 
-def initialValidationOfStringCPE(stringCPE: str) -> str:
+def validationOfInputType(stringCPE: str) -> str:
     if not isinstance(stringCPE, str):
         raise TypeError("Wrong type! Input must be a string.")
+    return stringCPE
+
+
+def validationOfTheBeginningOfTheString(stringCPE: str) -> str:
     if not stringCPE.startswith("cpe:2.3"):
         raise ValueError("Incorrect beginning of a string CPE 2.3 It must starts with 'cpe:2.3'")
     return stringCPE
