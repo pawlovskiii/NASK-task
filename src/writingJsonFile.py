@@ -6,3 +6,5 @@ def writingJsonFile(dictCPE: dict) -> None:
 
     with open("DictCPE.json", "w") as outfile:
         outfile.write(json_object)
+    
+    print('JSON file successfully created!')
