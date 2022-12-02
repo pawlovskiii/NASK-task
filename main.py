@@ -10,7 +10,7 @@ from src.extractValuesOfDict import extractDictValuesToList
 from src.writingJsonFile import writingJsonFile
 
 
-def main() -> dict:
+def main() -> None:
 
     validatedInputType = validationOfInputType(stringCPE)
     validatedTheBeginningOfTheString = validationOfTheBeginningOfTheString(validatedInputType)
@@ -21,10 +21,7 @@ def main() -> dict:
     dictCPE = mergeArraysToDict(listOfKeysToOutputDictCPE, extractDictValuesToList(regExValidation))
     writingJsonFile(dictCPE)
 
-    return dictCPE
-
-
-print(main())
+    print(dictCPE)
 
 
 if __name__ == "__main__":
