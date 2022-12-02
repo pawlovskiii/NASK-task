@@ -4,7 +4,9 @@
 
 - [General info](#general-info)
 - [Setup](#setup)
-  - [Run the project](#run-the-project)
+  - [Installing dependencies](#installing-dependencies)
+  - [Additional pieces of information](#additional-pieces-of-information)
+  - [Recommended commands to use for the project](#recommended-commands-to-use-for-the-project)
 
 ## General info
 
@@ -32,10 +34,45 @@ output = {
 
 ## Setup
 
-The result will be visible in two places. The first one is the terminal. The second one is a JSON file, which will create after executing the main function. To see both results it's needed to run the project within the below command. Additional JSON file with proper indents is for increased readability purpose, which the terminal doesn't provide.
+These are the crucial steps to configuring and running the project. I provided solutions within Python and JavaScript.
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Python](https://www.python.org/downloads/) (which comes with [pip](https://pip.pypa.io/en/stable/installation/)) installed on your computer.
 
-### Run the project
+```bash
+# Clone this repository
+$ git clone https://github.com/pawlovskiii/NASK-task
 
-```python
-python .\main.py
+# Go into the repository
+$ cd NASK-task
+```
+
+### Installing dependencies
+
+```bash
+# To download all the necessary Python packages needed for the project
+$ pip install -r requirements.txt
+```
+
+### Additional pieces of information
+
+The result will be visible in two places:
+
+1. Terminal
+2. DictCPE.json
+
+Additional JSON file with proper indents is for increased readability purpose, which the terminal doesn't provide. It'll create after executing the main function.
+
+### Recommended commands to use for the project
+
+To run the project
+
+```bash
+$ python .\main.py
+```
+
+To run the tests within pytest
+
+```bash
+$ cd tests
+
+$ pytest
 ```
