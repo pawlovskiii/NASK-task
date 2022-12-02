@@ -59,7 +59,7 @@ The result will be visible in two places:
 1. Terminal
 2. DictCPE.json
 
-Additional JSON file with proper indents is for increased readability purpose, which the terminal doesn't provide. It'll create after executing the main function.
+Additional JSON file with proper indents is for increased readability purpose, which the terminal doesn't provide. It'll create after the execution of the main function.
 
 ### Recommended commands to use for the project
 
