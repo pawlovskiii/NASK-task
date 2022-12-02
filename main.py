@@ -4,9 +4,9 @@ from src.validationOfStringCPE import (
     validationOfTheBeginningOfTheString,
     regExValidationOfStringCPE,
 )
-from src.extractStringCPE import stripString
-from src.mergeArrays import mergeArraysToDict
-from src.extractValuesOfDict import extractDictValuesToList
+from src.stripStringCPE import stripString
+from src.mergeArraysToDict import mergeArraysToDict
+from src.listOfValuesToOutputDictCPE import listOfValuesToOutputDictCPE
 from src.writingJsonFile import writingJsonFile
 
 
@@ -18,7 +18,7 @@ def main() -> None:
     strippedStringCPE = stripString(validatedTheBeginningOfTheString)
     regExValidation = regExValidationOfStringCPE(strippedStringCPE)
 
-    dictCPE = mergeArraysToDict(listOfKeysToOutputDictCPE, extractDictValuesToList(regExValidation))
+    dictCPE = mergeArraysToDict(listOfKeysToOutputDictCPE, listOfValuesToOutputDictCPE(regExValidation))
     writingJsonFile(dictCPE)
 
     print(dictCPE)
