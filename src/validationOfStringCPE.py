@@ -14,7 +14,7 @@ def validationOfTheBeginningOfTheString(takeInputFromUserOrUseSampleStringCPE: s
 
 
 def regExValidationOfStringCPE(strippedStringCPE: str) -> str:
-    regex = "^[a-z]:[a-z]+:[a-z, _]+:[0-9, .]+:[a-z]+:[a-z, *]+:[a-z, *]+:[a-z, *]+:[a-z, *]+:[a-z, *]+:[a-z, *]+$"
+    regex = f"^[h, o, a, *]:[A-Z, a-z, _, *]+:[A-Z, a-z, _, *]+:[A-Z, 0-9, ., *]+:[0-9, A-Z, a-z, *]+:[0-9, A-Z, a-z, _, *]+:[0-9, A-Z, a-z, *]+:[0-9, A-Z, a-z, _, *]+:[0-9, A-Z, a-z, _, *]+:[0-9, A-Z, a-z, _, *]+:[0-9, A-Z, a-z, _, *]+$"
     if not re.search(regex, strippedStringCPE):
         raise ValueError("Invalid string CPE 2.3")
     return strippedStringCPE
