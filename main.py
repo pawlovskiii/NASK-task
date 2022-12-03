@@ -1,4 +1,5 @@
 from src.data import listOfKeysToOutputDictCPE, stringCPE
+from src.takeInputFromTerminal import takeInputFromTerminal
 from src.validationOfStringCPE import (
     validationOfInputType,
     validationOfTheBeginningOfTheString,
@@ -12,7 +13,9 @@ from src.writingJsonFile import writingJsonFile
 
 def main() -> None:
 
-    validatedInputType = validationOfInputType(stringCPE)
+    takeInputFromUserOrUseSampleStringCPE = takeInputFromTerminal(stringCPE)
+
+    validatedInputType = validationOfInputType(takeInputFromUserOrUseSampleStringCPE)
     validatedTheBeginningOfTheString = validationOfTheBeginningOfTheString(validatedInputType)
 
     strippedStringCPE = stripString(validatedTheBeginningOfTheString)
