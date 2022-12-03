@@ -34,8 +34,7 @@ output = {
 
 ## Setup
 
-These are the crucial steps to configuring and running the project. I provided solutions within Python and JavaScript.
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Python](https://www.python.org/downloads/) (which comes with [pip](https://pip.pypa.io/en/stable/installation/)) installed on your computer.
+These are the crucial steps to configuring and running the project. To clone and run this application, you'll need [Git](https://git-scm.com) and [Python](https://www.python.org/downloads/) (which comes with [pip](https://pypi.org/project/pip/)) installed on your computer.
 
 ```bash
 # Clone this repository
