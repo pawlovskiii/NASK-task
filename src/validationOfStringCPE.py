@@ -20,7 +20,7 @@ def validationOfTheBeginningOfTheString(takeInputFromUserOrUseSampleStringCPE: s
 
 
 def regExValidationOfStringCPE(strippedStringCPE: str) -> str:
-    regex = f"^[h, o, a, *]:[A-Z, a-z, _, *]+:[A-Z, a-z, _, *]+:[A-Z, 0-9, ., *]+:[0-9, A-Z, a-z, *]+:[0-9, A-Z, a-z, _, *]+:[0-9, A-Z, a-z, *]+:[0-9, A-Z, a-z, _, *]+:[0-9, A-Z, a-z, _, *]+:[0-9, A-Z, a-z, _, *]+:[0-9, A-Z, a-z, _, *]+$"
+    regex = '^[aoh]:[a-zA-Z0-9@_!#$%^&*()<>?\/|}{~:;,.`"=]+:[a-zA-Z0-9@_!#$%^&*()<>?\/|}{~:;,.`"=]+:[a-zA-Z0-9@_!#$%^&*()<>?\/|}{~:;,.`"=]+:[a-zA-Z0-9@_!#$%^&*()<>?\/|}{~:;,.`"=]+:[a-zA-Z0-9@_!#$%^&*()<>?\/|}{~:;,.`"=]+:[a-zA-Z*-]+:[a-zA-Z0-9@_!#$%^&*()<>?\/|}{~:;,.`"=]+:[a-zA-Z0-9@_!#$%^&*()<>?\/|}{~:;,.`"=]+:[a-zA-Z0-9@_!#$%^&*()<>?\/|}{~:;,.`"=]+:[a-zA-Z0-9@_!#$%^&*()<>?\/|}{~:;,.`"=]+$'
     if not re.search(regex, strippedStringCPE):
         raise ValueError("Invalid string CPE 2.3")
     return strippedStringCPE
