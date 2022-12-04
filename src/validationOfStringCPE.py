@@ -1,6 +1,12 @@
 import re
 
 
+def checkSpaceInStringCPE(takeInputFromUserOrUseSampleStringCPE):
+    if " " in takeInputFromUserOrUseSampleStringCPE:
+        raise ValueError("String CPE 2.3 cannot include whitespace. Please Try again.")
+    return takeInputFromUserOrUseSampleStringCPE
+
+
 def validationOfInputType(takeInputFromUserOrUseSampleStringCPE: str) -> str:
     if not isinstance(takeInputFromUserOrUseSampleStringCPE, str):
         raise TypeError("Wrong type! Input must be a string.")

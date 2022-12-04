@@ -1,6 +1,7 @@
 from src.data import listOfKeysToOutputDictCPE, stringCPE
 from src.takeInputFromTerminal import takeInputFromTerminal
 from src.validationOfStringCPE import (
+    checkSpaceInStringCPE,
     validationOfInputType,
     validationOfTheBeginningOfTheString,
     regExValidationOfStringCPE,
@@ -15,7 +16,8 @@ def main() -> None:
 
     takeInputFromUserOrUseSampleStringCPE = takeInputFromTerminal(stringCPE)
 
-    validatedInputType = validationOfInputType(takeInputFromUserOrUseSampleStringCPE)
+    validationForWhitespaceInStringCPE = checkSpaceInStringCPE(takeInputFromUserOrUseSampleStringCPE)
+    validatedInputType = validationOfInputType(validationForWhitespaceInStringCPE)
     validatedTheBeginningOfTheString = validationOfTheBeginningOfTheString(validatedInputType)
 
     strippedStringCPE = stripString(validatedTheBeginningOfTheString)
