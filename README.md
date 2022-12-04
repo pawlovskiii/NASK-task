@@ -5,12 +5,23 @@
 - [General info](#general-info)
 - [Setup](#setup)
   - [Installing dependencies](#installing-dependencies)
-  - [Additional pieces of information](#additional-pieces-of-information)
   - [Recommended commands to use for the project](#recommended-commands-to-use-for-the-project)
 
 ## General info
 
-The task is about writing own parser Formatted String Binding for CPE 2.3
+The task is about writing your parser Formatted String Binding for CPE 2.3. The key thing about the project is the correctness of the inputted string CPE. I firmly focused on various validations including regex to test them within unit tests nextly.
+
+In the case of launching an application through the terminal, the user will be provided with two choices.
+
+1. Write his own string CPE 2.3
+2. Use sample string CPE 2.3
+
+The result will be visible in two places:
+
+1. Terminal
+2. DictCPE.json
+
+Additional JSON file with proper indents is for increased readability purpose, which the terminal doesn't provide. It'll create after the execution of the main function.
 
 ```python
 # Sample input
@@ -50,15 +61,6 @@ $ cd NASK-task
 # To download all the necessary Python packages needed for the project
 $ pip install -r requirements.txt
 ```
-
-### Additional pieces of information
-
-The result will be visible in two places:
-
-1. Terminal
-2. DictCPE.json
-
-Additional JSON file with proper indents is for increased readability purpose, which the terminal doesn't provide. It'll create after the execution of the main function.
 
 ### Recommended commands to use for the project
 
