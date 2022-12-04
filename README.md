@@ -9,7 +9,7 @@
 
 ## General info
 
-The task is about writing your parser Formatted String Binding for CPE 2.3. The key thing about the project is the correctness of the inputted string CPE. I firmly focused on various validations including regex to test them within unit tests nextly.
+The task is about writing your parser Formatted String Binding for CPE 2.3. The key thing about the project is the correctness of the inputted string CPE. I firmly focused on various validations including regex to test them within unit tests nextly. Moreover, even if the user provides an invalid string CPE, the error messages explain where exactly the problem lies and how the sample valid input looks.
 
 In the case of launching an application through the terminal, the user will be provided with two choices.
 
