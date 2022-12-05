@@ -26,9 +26,12 @@ def validationOfTheBeginningOfTheString(takeInputFromUserOrUseSampleStringCPE: s
 
 
 def regExValidationOfStringCPE(strippedStringCPE: str) -> str:
-    regex = '^[aoh]:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~:;,.`"=-\\\\-\\]+:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~:;,.`"=-\\\\-\\-]+:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~:;,.`"=-\\\\-\\-]+:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~:;,.`"=-\\\\-\\-]+:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~:;,.`"=-\\\\-\\-]+:[a-zA-Z*-]+:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~:;,.`"=-\\\\-\\-]+:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~:;,.`"=-\\\\-\\-]+:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~:;,.`"=-\\\\-\\-]+:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~:;,.`"=-\\\\-\\-]+$'
+
+    regex = '^[aoh]:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~;,.`"=-\\\\-\\]+:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~;,.`"=-\\\\-\\-]+:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~;,.`"=-\\\\-\\-]+:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~;,.`"=-\\\\-\\-]+:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~;,.`"=-\\\\-\\-]+:[a-zA-Z*-]+:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~;,.`"=-\\\\-\\-]+:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~;,.`"=-\\\\-\\-]+:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~;,.`"=-\\\\-\\-]+:[a-zA-Z0-9@_!#$%^&*()<>?/|}{~;,.`"=-\\\\-\\-]$'
+
     if not re.search(regex, fr"{strippedStringCPE}"):
         raise ValueError(
             "Invalid string CPE 2.3 \nExample of valid input: cpe:2.3:a:microsoft:internet_explorer:8.0.6001:beta:*:*:*:*:*:*"
         )
-    return strippedStringCPE
+    print(re.search(regex, fr"{strippedStringCPE}").group())
+    return re.search(regex, fr"{strippedStringCPE}").group()
