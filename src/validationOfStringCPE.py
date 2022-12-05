@@ -33,5 +33,4 @@ def regExValidationOfStringCPE(strippedStringCPE: str) -> str:
         raise ValueError(
             "Invalid string CPE 2.3 \nExample of valid input: cpe:2.3:a:microsoft:internet_explorer:8.0.6001:beta:*:*:*:*:*:*"
         )
-    print(re.search(regex, fr"{strippedStringCPE}").group())
     return re.search(regex, fr"{strippedStringCPE}").group()
