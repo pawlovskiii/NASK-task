@@ -1,7 +1,7 @@
 import re
 
 
-def checkSpaceInStringCPE(takeInputFromUserOrUseSampleStringCPE):
+def checkSpaceInStringCPE(takeInputFromUserOrUseSampleStringCPE: str) -> str:
     if " " in takeInputFromUserOrUseSampleStringCPE:
         raise ValueError(
             "String CPE 2.3 cannot include whitespace. \nExample of valid input: cpe:2.3:a:microsoft:internet_explorer:8.0.6001:beta:*:*:*:*:*:*"
