@@ -6,7 +6,7 @@ sys.path.append("../src")
 from validationOfStringCPE import regExValidationOfStringCPE
 
 
-def test_input_within_regex_error():
+def test_input_within_regex_error() -> None:
 
     listOfPossibleInputs = [
         "amicrosoft:internet_explorer:8.0.6001:beta:*:*:*:*:*:*",
@@ -21,7 +21,7 @@ def test_input_within_regex_error():
             regExValidationOfStringCPE(item)
 
 
-def test_input_within_regex_assert():
+def test_input_within_regex_assert() -> None:
 
     listOfPossibleInputs = [
         "a:microsoft:internet_explorer:8.0.6001:foobar:*:*:*:*:*:*",

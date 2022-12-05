@@ -6,7 +6,7 @@ sys.path.append("../src")
 from validationOfStringCPE import regExValidationOfStringCPE
 
 
-def test_input_within_whitespaces():
+def test_input_within_whitespaces() -> None:
 
     listOfPossibleInputs = [
         " a:microsoftinternet_explorer:8.0.6001:beta:*:*:*:*:*:*",

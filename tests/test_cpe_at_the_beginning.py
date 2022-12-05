@@ -6,7 +6,7 @@ sys.path.append("../src")
 from validationOfStringCPE import validationOfTheBeginningOfTheString
 
 
-def test_cpe_at_the_beginning():
+def test_cpe_at_the_beginning() -> None:
 
     listOfPossibleInputs = ["wewe23:32", "daasw", "cpe2.3:3232"]
 
