@@ -49,10 +49,10 @@ These are the crucial steps to configuring and running the project. To clone and
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/pawlovskiii/NASK-task
+$ git clone https://github.com/pawlovskiii/Parser-Formatted-String-Binding-For-CPE-2.3
 
 # Go into the repository
-$ cd NASK-task
+$ cd Parser-Formatted-String-Binding-For-CPE-2.3
 ```
 
 ### Installing dependencies
